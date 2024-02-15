@@ -27,7 +27,7 @@ function Home() {
       const data = await response.json();
 
       if (response.status === 200) {
-        console.log("Login Success:", data);
+        console.log("Login Success:");
         // Assuming 'data' contains a token, save it for future requests
         localStorage.setItem("token", data.token);
 
