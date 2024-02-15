@@ -1,8 +1,9 @@
 import { useRef, useState, useEffect } from "react";
 import { Editor as MonacoEditor } from "@monaco-editor/react";
 import io from "socket.io-client";
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'http://localhost:4000';
 
-const socket = io("http://localhost:4000");
+const socket = io(backendUrl);
 
 function Editor() {
     const editorRef = useRef(null);

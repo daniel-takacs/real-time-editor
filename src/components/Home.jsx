@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom"; // Import useHistory for r
 import "./Login.css"; // Add this line to import the CSS styles
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'http://localhost:4000';
 
 function Home() {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ function Home() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:4000/auth/login", {
+      const response = await fetch(`${backendUrl}/auth/login`, {
         // Adjust the URL as needed
         method: "POST",
         headers: {

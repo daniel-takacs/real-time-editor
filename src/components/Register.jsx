@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Register.css";
 import { useNavigate } from "react-router-dom";
+const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || 'http://localhost:4000';
 
 function Register() {
   const [username, setUsername] = useState("");
@@ -9,11 +10,11 @@ function Register() {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/auth/register", {
+      const response = await fetch(`${backendUrl}/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
