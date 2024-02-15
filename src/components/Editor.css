@@ -1,0 +1,87 @@
+/* Editor Container */
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.monaco-container {
+    width: 100%;
+}
+.header {
+    display: flex;
+    justify-content: left;
+    margin-bottom: .5rem;
+}
+.editor-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Button Style */
+  .editor-button {
+    padding: 8px 16px;
+    background-color: #1e1e1e; /* Dark background */
+    border: 1px solid #3c3c3c; /* Slightly lighter border for depth */
+    color: #c5c5c5; /* Light text color for contrast */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .editor-button:hover {
+    background-color: #2a2d2e; /* Slightly lighter on hover */
+  }
+  
+  /* Dropdown Style */
+  .editor-dropdown {
+    padding: 6px 12px;
+    background-color: #1e1e1e; /* Matching the button's background */
+    border: 1px solid #3c3c3c; /* Consistent border color */
+    color: #c5c5c5; /* Matching the button's text color */
+    font-size: 14px;
+    border-radius: 4px;
+  }
+  
+  .editor-dropdown:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #0078d4; /* Optional: Add a custom focus color */
+  }
+  
+  /* Apply custom styles to select dropdown arrow */
+  .editor-dropdown::-ms-expand {
+    display: none; /* Hide the default arrow in IE/Edge */
+  }
+  
+  .editor-dropdown::after {
+    /* Custom dropdown arrow using CSS */
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #c5c5c5; /* Arrow color */
+    pointer-events: none; /* Prevent interaction with the arrow */
+  }
+  
+  /* Ensure the select element appearance is consistent across browsers */
+  select.editor-dropdown {
+    -webkit-appearance: none; /* Remove default style in WebKit browsers */
+    -moz-appearance: none; /* Remove default style in Firefox */
+    appearance: none; /* Remove default style in modern browsers */
+  }
+  
+  .logout {
+    margin-left: auto;
+  }
+
+  .logout button{
+    padding: 8px 16px;
+    background-color: #06d6a0; /* Dark background */
+    border: 1px solid #3c3c3c; /* Slightly lighter border for depth */
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  .logout button:hover {
+    background-color: #05c29e;
+}
