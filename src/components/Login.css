@@ -1,0 +1,90 @@
+/* Login.css - Dark and Modern Theme */
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-sizing: border-box; /* Ensures padding is included in the container's width */
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #06d6a0; /* A vibrant accent color */
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; /* Add this line */
+}
+
+.login-container input::placeholder {
+    color: #bbb;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #06d6a0; /* Matching the vibrant accent color */
+    color: #222;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #05c29e; /* A slightly darker shade for the hover state */
+}
+
+.login-container button[type="button"] {
+    background: none;
+    border: none;
+    color: #06d6a0; /* Your accent color */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.login-container button[type="button"]:hover {
+    text-decoration: underline;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-input {
+    width: 100%;
+    padding-right: 40px;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+  }
+  
+  .toggle-password {
+    top: calc(50% - (15px / 2));
+  }
+  
+  

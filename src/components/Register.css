@@ -1,0 +1,90 @@
+/* Register.css */
+
+/* Container for the registration form, similar to the login container */
+.register-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    box-sizing: border-box;
+}
+
+/* Styling for form headings, keeping the accent color consistent */
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #06d6a0; /* A vibrant accent color */
+}
+
+/* Shared input styles, ensuring consistency in appearance */
+.register-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #555;
+    background-color: #333;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box; /* Add this line */
+}
+
+/* Placeholder color for better visibility */
+.register-container input::placeholder {
+    color: #bbb;
+}
+
+/* Styles for the register button, mirroring the login button's styling */
+.register-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #06d6a0; /* Matching the vibrant accent color */
+    color: #222;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect for interactive feedback */
+.register-container button:hover {
+    background-color: #05c29e;
+}
+
+/* Optionally, styles for a back-to-login link or button */
+.login-link,
+.register-container button[type="button"] {
+    background: none;
+    border: none;
+    color: #06d6a0; /* Your accent color */
+    padding: 0;
+    margin-top: 20px;
+}
+
+.login-link:hover,
+.register-container button[type="button"]:hover {
+    color: #05c29e;
+}
+
+
+.success-message, .error-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success-message {
+    color: #28a745; /* Green */
+    background-color: #dff0d8;
+}
+
+.error-message {
+    color: #dc3545; /* Red */
+    background-color: #f8d7da;
+}
